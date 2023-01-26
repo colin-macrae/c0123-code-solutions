@@ -1,0 +1,64 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.row {
+  display: flex;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.white-circle-button {
+  /* padding: 20px; */
+  margin: auto;
+  width: 100px;
+  text-align: center;
+}
+
+.transparent-image {
+  padding: 25%;
+}
+
+body {
+  background-color: rgb(0 174 255);
+  color: white;
+  font-family: lato, sans-serif;
+}
+
+button {
+  border-radius: 100%;
+
+  /* margin: auto; */
+  border: none;
+  background-color: white;
+}
+
+.button-container {
+  padding: 0 25%;
+}
+
+h1 {
+  font-size: 176%;
+}
+
+.highlights {
+  margin: 0 20px;
+}
+
+p {
+  font-size: 12px;
+}
