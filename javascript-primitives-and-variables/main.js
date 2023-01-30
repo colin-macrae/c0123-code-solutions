@@ -1,9 +1,9 @@
 var fullName = 'Colin Macrae';
 var isCool = false;
 var totalPets = 0;
-console.log('Full name:', fullName);
-console.log('Is cool?:', isCool);
-console.log('Number of pets:', totalPets);
+console.log('Full name:', typeof fullName);
+console.log('Is cool?:', typeof isCool);
+console.log('Number of pets:', typeof totalPets);
 
 var unknown = null;
 console.log('null:', unknown);
