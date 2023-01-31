@@ -17,3 +17,10 @@ function getFirstName(person) {
   return person.firstName;
 }
 console.log('First name:', getFirstName({ firstName: 'Colin', lastName: 'Macrae' }));
+
+function getLastElement(array) {
+  var lastItem = array.length - 1;
+  return array[lastItem];
+
+}
+console.log(getLastElement(['bread', 'cheese', 'ham', 'mayo']));
