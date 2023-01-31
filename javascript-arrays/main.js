@@ -1,9 +1,9 @@
 var colors = ['red ', 'white ', 'blue'];
-console.log('value of colors:', colors[0]);
-console.log('value of colors:', colors[1]);
-console.log('value of colors:', colors[2]);
+console.log('value of colors 0:', colors[0]);
+console.log('value of colors 1:', colors[1]);
+console.log('value of colors 2:', colors[2]);
 
-console.log('am colors:', 'America is ' + colors[0] + colors[1] + 'and ' + colors[2] + '.');
+console.log('America is:', 'America is ' + colors[0] + colors[1] + 'and ' + colors[2] + '.');
 
 colors[2] = 'green';
 console.log('Mexico is:', 'Mexico is ' + colors[0] + colors[1] + 'and ' + colors[2] + '.');
