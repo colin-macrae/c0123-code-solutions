@@ -1,0 +1,57 @@
+* {
+  margin: none;
+  padding: none;
+}
+
+body {
+  /* background-color: grey; */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  font-size: 13px;
+}
+
+.columns-all {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.column {
+  margin: 10px;
+}
+
+img {
+  width: 200px;
+}
+
+.item-and-price {
+  display: flex;
+}
+
+.grey-text {
+  color: rgb(206 206 206);
+  font-weight: 400;
+}
+
+p {
+  display: inline-block;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.red-back {
+  background-color: rgb(253 231 231);
+  padding: 0 5px;
+  border-radius: 10%;
+}
