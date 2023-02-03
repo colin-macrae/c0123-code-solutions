@@ -45,20 +45,20 @@ function logEachCharacter(string) {
   }
 }
 
-// function doubleAll(numbers) {
-//   var doubled = [];
-//   for (var i = 0; i < numbers.length; i++) {
-//     doubled.push(numbers[i]*2)
-//   }
-//   return doubled;
-// }
+function doubleAll(numbers) {
+  var doubled = [];
+  for (var i = 0; i < numbers.length; i++) {
+    doubled.push(numbers[i] * 2);
+  }
+  return doubled;
+}
 
 // const abc = { a: 1, b: 2, c: 3 };
 
 function getKeys(object) {
   var keys = [];
   for (const property in object) {
-    keys.push([property]);
+    keys.push(property);
   }
   return keys;
 }
