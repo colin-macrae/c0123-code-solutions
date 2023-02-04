@@ -24,12 +24,12 @@
 
 function capitalize(word) {
   var cappedWord = '';
-  var ucLetter = '';
-  var restOfWord = '';
-  ucLetter = word[0].toUpperCase();
+  var cappedLetter = '';
+  var lowerCaseLetters = '';
+  cappedLetter = word[0].toUpperCase();
   for (var i = 1; i < word.length; i++) {
-    restOfWord += word[i].toLowerCase();
+    lowerCaseLetters += word[i].toLowerCase();
   }
-  cappedWord = ucLetter + restOfWord;
+  cappedWord = cappedLetter + lowerCaseLetters;
   return cappedWord;
 }
