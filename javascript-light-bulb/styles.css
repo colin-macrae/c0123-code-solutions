@@ -1,0 +1,29 @@
+.grey-button {
+  background-color: grey;
+}
+
+.black-background {
+  background-color: black;
+}
+
+.yellow-button {
+  background-color: rgb(255 255 122);
+}
+
+.light-yellow-background {
+  background-color: rgb(252 252 245);
+}
+
+/* other */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
