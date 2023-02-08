@@ -11,4 +11,3 @@ function displayObject(e) {
   console.log(formControlValues);
   return formControlValues;
 }
-// console.log(displayObject())

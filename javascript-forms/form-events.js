@@ -27,17 +27,3 @@ inputUserEmail.addEventListener('input', handleInput);
 textArea.addEventListener('focus', handleFocus);
 textArea.addEventListener('blur', handleBlur);
 textArea.addEventListener('input', handleInput);
-
-// var openModalButton = document.querySelector('.open-modal-button');
-// var noButton = document.querySelector('.no-button');
-// var displayOff = document.querySelector('.display-off');
-
-// openModalButton.addEventListener('click', openModalFunction);
-// function openModalFunction(e) {
-//   displayOff.className = 'container-2';
-// }
-
-// noButton.addEventListener('click', closeModalFunction);
-// function closeModalFunction(e) {
-//   displayOff.className = 'container-2 display-off';
-// }
