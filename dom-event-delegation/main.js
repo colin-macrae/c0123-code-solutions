@@ -11,5 +11,3 @@ function taskListCallback(e) {
     taskListItem.remove();
   }
 }
-
-// or >> if (e.target.tagName === 'BUTTON')
