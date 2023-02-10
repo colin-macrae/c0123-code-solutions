@@ -1,0 +1,51 @@
+.black {
+  color: black;
+}
+
+.green {
+  color: rgb(19 255 19);
+}
+
+.red {
+  color: red;
+}
+
+.h,
+.white {
+  color: white;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* .black01 {
+  color:black;
+}
+
+.green01 {
+  color: rgb(15, 253, 15);
+}
+
+.red01 {
+  color: red;
+}
+
+
+.black02 {
+  color: black;
+}
+
+.green02 {
+  color: rgb(15, 253, 15);
+}
+
+.red02 {
+  color: red;
+} */
