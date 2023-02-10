@@ -19,6 +19,6 @@ console.log('books array:', typeof books, books);
 
 console.log('books JSON stringified:', typeof JSON.stringify(books), JSON.stringify(books));
 
-console.log('student JSON stringified:', typeof ['{ "id": 567, "name": "Jon Doe" }], [{ "id": 567, "name": "Jon Doe" }']);
+console.log('student JSON stringified:', typeof '{ "id": 567, "name": "Jon Doe" }], [{ "id": 567, "name": "Jon Doe" }');
 
 console.log('student parsed:', typeof JSON.parse('{ "id": 567, "name": "Jon Doe" }'), JSON.parse('{ "id": 567, "name": "Jon Doe" }'));
