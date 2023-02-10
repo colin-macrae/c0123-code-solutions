@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Tiempos Headline"; */
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.sec-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(224 224 224);
+}
+
+.sec-one a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(143 143 143);
+}
+
+.sec-one img {
+  height: 30px;
+}
+
+.sec-one nav {
+  display: flex;
+  align-items: center;
+}
+
+.blue-color {
+  background-color: hsl(207deg 56% 24%);
+}
+
+button {
+  color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sec-two {
+  background-image: url("images/product/product-header.jpg");
+  background-size: cover;
+
+  /* background:
+      linear-gradient(rgb(105 105 105 / 34.2%),
+        rgb(119 119 119 / 32.2%)); */
+
+  width: 1200px;
+  height: 630px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.sec-two div {
+  width: 520px;
+  padding-left: 110px;
+}
+
+.sec-two div h2 {
+  padding: 0 0 20px;
+}
+
+.sec-two div p {
+  padding: 0;
+}
