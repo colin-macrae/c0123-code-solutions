@@ -1,0 +1,327 @@
+body {
+  width: 800px;
+  margin: auto;
+  font-family: Avenir, sans-serif;
+  color: rgb(143 143 143);
+
+  /* display: relative; */
+}
+
+/* HEADER SECTION */
+header {
+  /* display: flex; */
+  position: relative;
+  display: flex;
+
+  /* border-bottom: rgb(235, 235, 235) solid 1px; */
+  width: 100%;
+  margin: auto;
+}
+
+.header-canvas {
+  color: hsl(207deg 56% 24%);
+}
+
+.header-canvas img {
+  height: 20px;
+}
+
+.header-nav {
+  right: 0;
+  position: absolute;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+footer a {
+  line-height: 2.5;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bottom a {
+  margin-right: 35px;
+  text-decoration: none;
+  color: rgb(143 143 143);
+}
+
+.header-nav nav a {
+  display: inline-block;
+  padding: 30px 16px;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(177 177 177);
+}
+
+button {
+  background-color: hsl(207deg 56% 24%);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header button {
+  height: 40px;
+  width: 100px;
+  margin: auto;
+  margin-left: 10px;
+}
+
+/* SECTION ONE - PICTURE SECTION */
+.reimagined-section {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+
+  /* filter: grayscale() */
+  position: relative;
+  z-index: -1;
+  height: 393px;
+  margin: 0;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.image-text {
+  width: 450px;
+  margin: 40px 0;
+  padding: 20px 40px 40px;
+  color: white;
+
+  /* z-index: 2; */
+  font-size: 22px;
+}
+
+.image-text p {
+  font-size: 14px;
+}
+
+.reimagined-button {
+  width: 130px;
+  height: 35px;
+  margin: 10px 0;
+}
+
+.background-filter {
+  position: absolute;
+  background:
+    linear-gradient(
+      rgb(105 105 105 / 34.2%),
+      rgb(119 119 119 / 32.2%)
+    );
+  height: 393px;
+  width: 800px;
+  z-index: -1;
+}
+
+/* SECTION TWO - CLINICIANS PREFER CANVAS */
+.sec-two-cntnr {
+  text-align: center;
+  background-color: rgb(243 243 243);
+
+  /* background-color: red; */
+
+  /* padding-top: px; */
+
+  /* width: 3000px; */
+
+  /* margin-left: -800px;
+  margin-right: -800px; */
+}
+
+footer h2 {
+  font-size: 15px;
+}
+
+.sec-two-row-one h2 {
+  font-size: 27px;
+  margin-bottom: -5px;
+}
+
+.sec-two-row-one p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.sec-two-row-one {
+  width: 400px;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.sec-two-row-two {
+  display: flex;
+  padding-bottom: 65px;
+}
+
+.sec-two-row-two-column {
+  /* width: 400px; */
+
+  /* padding: 40px;
+  margin: 40px; */
+  margin: auto;
+}
+
+/* SECTION THREE - READY TO LEARN MORE */
+.sec-three-cntnr {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn-more-right-col button {
+  display: float;
+  margin-right: 0;
+  margin-top: 25%;
+  padding: 10px 30px;
+
+  /* margin: auto; */
+}
+
+.learn-more-left-col h2 {
+  margin-bottom: -5px;
+  font-size: 26px;
+}
+
+.learn-more-left-col p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* SECTION FOUR - "CANVAS" */
+.footer-col-one img {
+  height: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  /* background-color: #808080; */
+  height: 400px;
+  align-items: center;
+
+  /* padding-top: 40px; */
+}
+
+.footer-col-one {
+  margin-top: -30px;
+}
+
+.footer-col-two {
+  display: flex;
+  margin-right: 50px;
+}
+
+.footer-col-two-left {
+  margin: 0 50px 20px 20px;
+}
+
+.footer-col-two-right {
+  margin: 0 30px 20px 20px;
+}
+
+.footer-col-two h2 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.image-text h2 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 300;
+}
+
+.sec-two-row-one h2,
+.learn-more-left-col h2,
+footer .footer-col-one h2,
+.header-canvas {
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 300;
+}
+
+footer .footer-col-one h2 {
+  margin-bottom: 40px;
+  font-size: 33px;
+  margin-top: 18px;
+}
+
+footer .footer-col-one p {
+  line-height: 1;
+}
+
+.footer-cntnr {
+  background-color: #585858;
+}
+
+/* BOTTOM NAV */
+.nav-bottom {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bottom-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+
+/* ONE BORDER BOTTOM AND TWO BANNERS SPANNING OUTSIDE OF CONTENT AREA */
+.sec-one-border-container {
+  position: relative;
+  height: 1400px;
+}
+
+.sec-one-border {
+  /* background-color: #c41c1c; */
+  width: 1390px;
+  position: absolute;
+  left: -300px;
+  z-index: -1;
+  top: -2650px;
+  height: 404px;
+  border-bottom: solid rgb(223 221 221) 1px;
+}
+
+.ribbon-one-container {
+  position: relative;
+  height: 400px;
+}
+
+.ribbon-one-background {
+  /* background-color: rgb(146, 32, 32); */
+  background-color: rgb(243 243 243);
+  width: 1390px;
+  position: absolute;
+  left: -300px;
+  z-index: -1;
+  top: -958px;
+  height: 373px;
+
+  /* bottom: 40px; */
+}
+
+.ribbon-two-container {
+  position: relative;
+  height: 400px;
+}
+
+.ribbon-two-background {
+  /* background-color: #ad1515; */
+  background-color: #585858;
+  width: 1390px;
+  position: absolute;
+  left: -300px;
+  z-index: -1;
+  top: -872px;
+  height: 404px;
+
+  /* bottom: 40px; */
+}
