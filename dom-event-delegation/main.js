@@ -1,5 +1,4 @@
 var taskList = document.querySelector('.task-list');
-// var taskListItem = document.querySelector('.task-list-item');
 
 taskList.addEventListener('click', taskListCallback);
 function taskListCallback(e) {
