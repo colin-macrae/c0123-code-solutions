@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-four-columns {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 310px;
+}
+
+.phone-images {
+  height: 400px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button img {
+  height: 70px;
+}
+
+.features,
+.descriptions {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.features {
+  font-weight: bold;
+}
