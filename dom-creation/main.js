@@ -91,16 +91,21 @@ function renderPokemon(pokemon) {
   div3PkmnCrdTxt.appendChild(number);
   div3PkmnCrdTxt.appendChild(aboutCharacter);
 }
-// renderPokemon(pokedex[2]);
+// renderPokemon(pokedex[4]);
 
-for (var i = 0; i < pokedex.length - 1; i++) {
-  // attach to row inside the loop here
-  renderPokemon(pokedex[i]);
+var attachPokemon = document.querySelector('.row');
+
+for (var i = 0; i < pokedex.length; i++) {
+  var pokemon = renderPokemon(pokedex[i]);
+  attachPokemon.appendChild(pokemon);
 }
+
+// var connect = document.querySelector('.row');
+// var pokemon1 = renderPokemon(pokedex[1]);
+// connect.appendChild(pokemon1);
 
 // console.log(renderPokemon(pokedex[2]));
 
-// var connect = document.querySelector('.row');
 // var pokemon1 = renderPokemon(pokedex[1]);
 // connect.appendChild(pokemon1);
 
