@@ -90,8 +90,9 @@ function renderPokemon(pokemon) {
   div3PkmnCrdTxt.appendChild(h2Pikachu);
   div3PkmnCrdTxt.appendChild(number);
   div3PkmnCrdTxt.appendChild(aboutCharacter);
+
+  return div1ThrdCol;
 }
-// renderPokemon(pokedex[4]);
 
 var attachPokemon = document.querySelector('.row');
 
@@ -99,76 +100,3 @@ for (var i = 0; i < pokedex.length; i++) {
   var pokemon = renderPokemon(pokedex[i]);
   attachPokemon.appendChild(pokemon);
 }
-
-// var connect = document.querySelector('.row');
-// var pokemon1 = renderPokemon(pokedex[1]);
-// connect.appendChild(pokemon1);
-
-// console.log(renderPokemon(pokedex[2]));
-
-// var pokemon1 = renderPokemon(pokedex[1]);
-// connect.appendChild(pokemon1);
-
-// var connect = document.querySelector('row');
-// var pokemon1 = renderPokemon(pokedex[1]);
-// connect.appendChild(pokemon1);
-
-// at the row, you want to append your function called with a
-// pokedex object as an argument
-// what does that mean? do you append the function?
-// the function is the thing doing the appending, no?  no.
-// the thing doing the appending of the code in the function is
-// you document query of class "row".
-// it seems like you need to append your loop there(as a variable
-// with a function inside?)
-// which has called pokedex at an index (e.g. pokedex[0])
-// then append the next pokedex index.  what would that
-// look like?
-// your loop would run the length of the array of objects.
-// your code inside the loop would
-// A) grab the function, run it with pokedex[i], and
-// run again, the next time with the next pokedex[i];
-
-// var div1Text = document.createTextNode('test');
-// div1.appendChild(div1Text);
-
-// var div1Text = document.createTextNode('test');
-// div1.appendChild(div1Text);
-// var positionDiv1 = document.querySelector('.container')[0];
-
-// function renderPokemon(pokemon) {
-//   var div1ThrdCol = document.createElement('div');
-//   div1ThrdCol.setAttribute('class', 'column-third');
-//   // var position
-//   console.log(div1ThrdCol);
-//   var div2PkmnCrd = document.createElement('div');
-//   div2PkmnCrd.setAttribute('class', 'pokemon-card');
-//   // var psndiv2PkmnCrd = document.querySelector('.column-third');
-
-//   console.log(div2PkmnCrd);
-//   var pikachuImg = document.createElement('img');
-//   pikachuImg.setAttribute('src', 'images/bulbasaur.png');
-//   var div3PkmnCrdTxt = document.createElement('div');
-//   div3PkmnCrdTxt.setAttribute('class', 'pokemon-card-text');
-//   console.log(div3PkmnCrdTxt);
-//   var h2Pikachu = document.createElement('h2');
-//   var h2PkchText = document.createTextNode('Pikachu');
-//   h2Pikachu.appendChild(h2PkchText);
-//   // console.log(h2Pikachu);
-//   var h3025 = document.createElement('h3');
-//   var h3025Text = document.createTextNode('#025');
-//   h3025.appendChild(h3025Text);
-//   // console.log(h2Pikachu);
-//   var aboutCharacter = document.createElement('p');
-//   var aboutText = document.createTextNode('Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.');
-//   aboutCharacter.appendChild(aboutText);
-//   // console.log(aboutCharacter);
-
-//   div1ThrdCol.appendChild(div2PkmnCrd);
-//   div2PkmnCrd.appendChild(pikachuImg);
-//   div2PkmnCrd.appendChild(div3PkmnCrdTxt);
-//   div3PkmnCrdTxt.appendChild(h2Pikachu);
-//   div3PkmnCrdTxt.appendChild(h3025);
-//   div3PkmnCrdTxt.appendChild(aboutCharacter);
-// }
-// console.log(renderPokemon(pokedex[1]));
