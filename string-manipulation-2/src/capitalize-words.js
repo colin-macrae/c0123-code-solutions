@@ -32,6 +32,17 @@ function capitalizeWords(string) {
 // the word is now finished
 // once that is finished, you still need to do the last word, without a space after it
 
+/// ////////////////////////////  ANOTHER STUDENT'S CODE USING JOIN METHOD
+// function capitalizeWords(string) {
+//   var stringLowercase = string.toLowerCase();
+//   var stringArray = stringLowercase.split(' ');
+//   // console.log(stringArray);
+//   for (var i = 0; i < stringArray.length; i++) {
+//     stringArray[i] = stringArray[i][0].toUpperCase() + stringArray[i].slice(1);
+//   }
+//   return stringArray.join(' ');
+// C
+
 //                SOME JUNK I WANT TO SAVE FOR STUDY ; )
 // function capitalizeWords(string) {
 //   var newUpperCasedString = '';
