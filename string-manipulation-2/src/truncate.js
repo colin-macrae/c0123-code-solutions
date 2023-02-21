@@ -13,5 +13,3 @@ function truncate(length, string) {
   shortString += '...';
   return shortString;
 }
-
-// console.log(truncate(8, 'All '));
