@@ -1,11 +1,8 @@
 /* exported Stopwatch */
-// this is a constructor, because it's not an actual object but rather it allows objects to be created using this constructor
-// it has one property, starttimeinsecons;
 function Stopwatch(startTimeInSeconds) {
   this.elapsedSeconds = startTimeInSeconds;
 }
 
-// what does prototype do? is it setting prototype?
 Stopwatch.prototype.tick = function () {
   this.elapsedSeconds++;
 };
