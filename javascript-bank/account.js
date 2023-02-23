@@ -40,7 +40,3 @@ Account.prototype.getBalance = function () {
     return balance;
   }
 };
-
-// if (amount <= 0 || has to be a whole number) {
-
-// we need to create a new object inside "transactions" property called "deposit"
