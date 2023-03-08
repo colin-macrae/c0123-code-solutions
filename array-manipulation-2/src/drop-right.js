@@ -2,7 +2,6 @@
 function dropRight(array, count) {
   var droppedRightArray = [];
   for (var i = array.length - 1 - count; i >= 0; i--) {
-    // droppedRightArray.unshift(array.length[i]);
     droppedRightArray.unshift(array[i]);
   }
   return droppedRightArray;

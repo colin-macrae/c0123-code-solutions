@@ -1,8 +1,7 @@
 /* exported take */
 function take(array, count) {
   var returnedArray = [];
-  if (array === []) {
-    // console.log('hi');
+  if (array.length === 0) {
     returnedArray = [];
     return returnedArray;
   } else {
@@ -12,4 +11,3 @@ function take(array, count) {
     return returnedArray;
   }
 }
-// console.log(take([], 7));
