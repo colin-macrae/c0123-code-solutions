@@ -27,17 +27,20 @@ const product = numbers.reduce(
 );
 console.log(product);
 
-// const balance = account.reduce(
-//   (accumulator, currentValue) => accumulator + currentValue.amount
-// );
-// console.log(balance);
+// review this
+const balance = account.reduce((accumulator, currentValue) => {
+  if (currentValue.type === 'deposit') {
+    accumulator += currentValue.amount;
+  } else {
+    accumulator -= currentValue.amount;
+  }
+  return accumulator;
+}, 0);
+console.log('Value of balance:', balance);
 
-// const composite = traits.reduce(
-//   (accumulator, currentValue) =>
-//   {
-//     Object.assign(accumulator, currentValue);
-//     // + currentValue
-//     // return accumulator.obj;
-//   }
-// );
-// console.log(composite);
+// review this
+const composite = traits.reduce((accumulator, currentValue) => {
+  accumulator[Object.keys(currentValue)[0]] = Object.values(currentValue)[0];
+  return accumulator;
+});
+console.log('Value of composite:', composite);
