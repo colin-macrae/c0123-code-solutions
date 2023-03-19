@@ -34,27 +34,3 @@ function handler(action) {
     console.log('Invalid request.  Please type "read" or "create" or "update or "delete"');
   }
 }
-
-// import { readFile } from 'node:fs/promises';
-
-// try {
-//   const filePath = new URL('test.txt', import.meta.url);
-//   const contents = await readFile(filePath, { encoding: 'utf8' });
-//   console.log(contents);
-// } catch (err) {
-//   console.error(err.message);
-// }
-
-// import * as fs from 'node:fs/promises';
-
-// try {
-//   const contents = await fs.readFile(process.argv[2], { encoding: 'utf8' });
-//   console.log(contents);
-// } catch (err) {
-//   console.error(err.message);
-// }
-
-// // import * as fs from 'node:fs/promises';
-
-// // fs.writeFile('rata.json', JSON.stringify(process.argv[2]))
-// //   .catch((err) => console.error(err));
