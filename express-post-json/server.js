@@ -3,6 +3,7 @@ import express from 'express';
 const grades = {};
 let nextId = 1;
 const app = express();
+app.use(express.json());
 
 app.get('/api/grades', (req, res) => {
   const gradesArray = [];
@@ -11,8 +12,6 @@ app.get('/api/grades', (req, res) => {
   }
   res.json(gradesArray);
 });
-
-app.use(express.json());
 
 // for review (lines 19-22)
 app.post('/api/grades', (req, res) => {
