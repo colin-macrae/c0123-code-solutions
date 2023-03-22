@@ -14,7 +14,7 @@ app.get('/api/grades', (req, res) => {
 
 app.use(express.json());
 
-// for review (lines 21-24)
+// for review (lines 19-22)
 app.post('/api/grades', (req, res) => {
   grades[nextId] = req.body;
   grades[nextId].id = nextId;
