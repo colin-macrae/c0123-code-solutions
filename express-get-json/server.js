@@ -25,7 +25,11 @@ const app = express();
 
 // installs middlewear that checks if it's a get request and if path matches
 app.get('/api/grades', (req, res) => {
-  res.json(grades);
+  const gradesArray = [];
+  for (const id in grades) {
+    gradesArray.push(grades[id]);
+  }
+  res.json(gradesArray);
 });
 
 app.listen(8080, () => {
