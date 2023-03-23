@@ -1,5 +1,0 @@
-update "products"
-   set "price"       = 200,
-       "name"        = 'Super ShakeWeight',
-       "description" = 'Makes you ULTRA strong!'
- where "productId" = 24;
