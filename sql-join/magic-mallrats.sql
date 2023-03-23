@@ -8,5 +8,6 @@ select "firstName",
   where "title" = 'Magic Mallrats';
 
   -- first, last name in CUSTOMERS (has customerId)
-  -- movie rentals in RENTALS (has filmId and customerId)
+  -- INVENTORY (filmId and inventoryId)
+  -- movie rentals in RENTALS (has customerId)
   -- movie title in FILMS (has filmId)
