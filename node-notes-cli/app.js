@@ -1,3 +1,4 @@
+// add error catching
 import * as fs from 'node:fs';
 import * as fsP from 'node:fs/promises';
 
