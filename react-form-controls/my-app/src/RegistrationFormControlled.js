@@ -15,11 +15,11 @@ const [password, setPassword] = useState('');
     >
 
       <label>Username
-        <input type="text" name="username" value={username} onChange={(e) => setUsername(e.target.value)}></input>
+        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)}></input>
       </label>
 
       <label>Password
-        <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
       </label>
 
       <button>Sign in</button>
