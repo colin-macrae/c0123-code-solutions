@@ -7,10 +7,3 @@ app.use(express.static('public'));
 app.listen(8080, () => {
   console.log('Express server listening on port 8080');
 });
-
-// console.log(req.method);
-// console.log(res.send('hello world!'));
-
-// app.use((req, res) => {
-
-// });
