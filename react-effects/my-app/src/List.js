@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import readItems from './read';
 
 export default function List() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [items, setItems] = useState([]);
   const [error, setError] = useState();
 
