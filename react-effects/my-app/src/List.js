@@ -23,7 +23,7 @@ export default function List() {
       }
     }
     loadItems();
-  }, [isLoading])
+  }, [])
 
   if (isLoading) {
     return <div>Loading...</div>;
