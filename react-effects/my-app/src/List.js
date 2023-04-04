@@ -11,21 +11,19 @@ export default function List() {
   //  - When the component mounts:
   //    - Read the items using `readItems` and update state so the list displays
   //    - Handle errors from `readItems`
-
-  // useEffect(() => {readItems}, [List])
   useEffect(() => {
     async function loadItems() {
       try {
         const items = await readItems();
         setItems(items);
+        setIsLoading(false);
       } catch (error) {
         setError(error);
-      } finally {
         setIsLoading(false);
       }
     }
     loadItems();
-  }, [])
+  }, [isLoading])
 
   if (isLoading) {
     return <div>Loading...</div>;
