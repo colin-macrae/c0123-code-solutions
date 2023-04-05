@@ -45,6 +45,21 @@ app.post('/api/auth/sign-in', async (req, res, next) => {
     }
 
     /* your code starts here */
+    const sql = `
+    select "userId",
+    "hashedPassword"
+    from "users"
+    where "username" = $1
+    `;
+    const params = [username];
+    const result = await db.query(sql, params);
+    const [user] = result.rows;
+    if (!user) {
+      throw new ClientError(401, 'invalid login');
+    }
+    const payload = { userId, username };
+    const token = jwt.sign(payload, process.env.TOKEN_SECRET);
+    res.json({ token, user: payload });
 
     /* Query the database to find the "userId" and "hashedPassword" for the "username".
      * If no user is found,
