@@ -2,16 +2,16 @@ import { useState } from "react";
 import './ToggleSwitch.css';
 
 export default function ToggleSwitch() {
- const [isOnOff, setIsOnOff] = useState(false)
+ const [isOn, setIsOn] = useState(false)
 
  function handleClick() {
-   setIsOnOff(!isOnOff);
+   setIsOn(!isOn);
  }
 
  let text = ''
-  if (isOnOff === true) {
+  if (isOn === true) {
   text = "On 😁"
-  } else if (isOnOff === false) {text = "Off 😪"}
+  } else if (isOn === false) {text = "Off 😪"}
 
  return (
   <>
