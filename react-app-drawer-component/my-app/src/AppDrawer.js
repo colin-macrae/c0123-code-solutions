@@ -1,26 +1,41 @@
 import './App.css';
 
-export default function AppDrawer() {
+export default function AppDrawer(onClick) {
+  function handleClick() {
+    console.log('modal clicked');
+  }
   return (
-    <div className='container'>
-      <a href='#' className='icon'>Open App Drawer</a>
-      <h1 className='header'>Choose a Sport</h1>
-      <button className='buttons'>Road Cycling</button>
-      <button className='buttons'>MTB</button>
-      <button className='buttons'>Cyclocross</button>
-      <button className='buttons'>BMX</button>
-      <button className='buttons'>E-bikes</button>
-    </div>
+    <>
+      <div className='drawer-transp-background' onClick={handleClick}>
+      </div>
+      <div className='drawer' >
+          <DrawerHeader text='Choose a Sport' />
+          <Button text='Road Cycling' />
+          <Button text='MTB' />
+          <Button text='Cyclocross' />
+          <Button text='BMX' />
+          <Button text='E-bikes' />
+      </div>
+    </>
   )
 }
 
-// export default function AppDrawer({ heading, items, onClick }) {
-//   const list = items.map((item) => <button onClick={() => onClick(item)}>{item}</button>)
+function Button({ text }) {
+  function handleClick() {
+    console.log('button clicked');
+  }
+  return (
+    <button
+    onClick={handleClick}
+    className='buttons'
+    >{text}</button>
+  )
+}
 
-//   return (
-//     <div className="drawer">
-//       <h2>{heading}</h2>
-//       {list}
-//     </div>
-//   )
-// }
+function DrawerHeader({ text }) {
+  return (
+    <h1
+      className='header'
+    >{text}</h1>
+  )
+}
