@@ -1,8 +1,9 @@
 import './App.css';
 
-export default function AppDrawer(onClick) {
+export default function AppDrawer({ onPress }) {
   function handleClick() {
     console.log('modal clicked');
+    onPress()
   }
   return (
     <>

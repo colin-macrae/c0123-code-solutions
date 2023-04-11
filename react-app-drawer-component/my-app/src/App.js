@@ -8,7 +8,13 @@ function App() {
 
   function handleClick() {
     console.log('drawer opener clicked');
-    setHideDrawer(false);
+    if(!hideDrawer) {
+      setHideDrawer(true);
+    }
+    if (hideDrawer) {
+      setHideDrawer(false);
+    }
+
   }
 
   if(hideDrawer) {
@@ -27,7 +33,7 @@ function App() {
       <div className='container'>
         <a href='#' className='icon'>Open App Drawer</a>
         <h1 className='page-title'>Stuff for Cycling!</h1>
-        <AppDrawer />
+        <AppDrawer onPress={handleClick}/>
       </div>
     )
   }
