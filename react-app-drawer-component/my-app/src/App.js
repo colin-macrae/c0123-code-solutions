@@ -3,18 +3,15 @@ import './App.css';
 import React from 'react';
 import { useState } from 'react';
 
+
+
 function App() {
   const [hideDrawer, setHideDrawer] = useState(true);
+  const [ header, setHeader ] = useState('Stuff for Cycling!')
 
   function handleClick() {
     console.log('drawer opener clicked');
-    if(!hideDrawer) {
-      setHideDrawer(true);
-    }
-    if (hideDrawer) {
-      setHideDrawer(false);
-    }
-
+    setHideDrawer(!hideDrawer);
   }
 
   if(hideDrawer) {
@@ -25,15 +22,15 @@ function App() {
           className='icon'
           onClick={handleClick}
           >======== ======== ========</a>
-        <h1 className='page-title'>Stuff for Cycling!</h1>
+        <h1 className='page-title'>{header}</h1>
       </div>
     )
   } else {
     return (
       <div className='container'>
         <a href='#' className='icon'>Open App Drawer</a>
-        <h1 className='page-title'>Stuff for Cycling!</h1>
-        <AppDrawer onPress={handleClick}/>
+        <h1 className='page-title'>{header}</h1>
+        <AppDrawer onPress={handleClick} />
       </div>
     )
   }
