@@ -1,6 +1,6 @@
 import './App.css';
 
-export default function AppDrawer({ onPress, setHeader, header }) {
+export default function AppDrawer({ onPress, setHeading, header }) {
   function handleClick() {
     console.log('modal clicked');
     onPress()
@@ -16,7 +16,7 @@ export default function AppDrawer({ onPress, setHeader, header }) {
         <button
           onClick={() => {
             handleClick()
-            setHeader('Road Cycling')
+            setHeading('Road Cycling')
           }
             }
           className='buttons'
@@ -24,7 +24,7 @@ export default function AppDrawer({ onPress, setHeader, header }) {
         <button
           onClick={() => {
             handleClick()
-            setHeader('MTB')
+            setHeading('MTB')
           }
           }
           className='buttons'
@@ -32,7 +32,7 @@ export default function AppDrawer({ onPress, setHeader, header }) {
         <button
           onClick={() => {
             handleClick()
-            setHeader('Cyclocross')
+            setHeading('Cyclocross')
           }
           }
           className='buttons'
@@ -40,7 +40,7 @@ export default function AppDrawer({ onPress, setHeader, header }) {
         <button
           onClick={() => {
             handleClick()
-            setHeader('BMX')
+            setHeading('BMX')
           }
           }
           className='buttons'
@@ -48,7 +48,7 @@ export default function AppDrawer({ onPress, setHeader, header }) {
         <button
           onClick={() => {
             handleClick()
-            setHeader('E-bikes')
+            setHeading('E-bikes')
           }
           }
           className='buttons'

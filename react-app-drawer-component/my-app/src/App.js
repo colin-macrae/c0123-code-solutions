@@ -7,10 +7,11 @@ import { useState } from 'react';
 
 function App() {
   const [ hideDrawer, setHideDrawer ] = useState(true);
-  const [ header, setHeader ] = useState('Stuff for Cycling!')
+  const [ heading, setHeading ] = useState('Stuff for Cycling!')
+
+
 
   function handleClick() {
-    console.log('drawer opener clicked');
     setHideDrawer(!hideDrawer);
   }
 
@@ -22,18 +23,18 @@ function App() {
           className='icon'
           onClick={handleClick}
           >======== ======== ========</a>
-        <h1 className='page-title'>{header}</h1>
+        <h1 className='page-title'>{heading}</h1>
       </div>
     )
   } else {
     return (
       <div className='container'>
         <a href='#' className='icon'></a>
-        <h1 className='page-title'>{header}</h1>
+        <h1 className='page-title'>{heading}</h1>
         <AppDrawer
         onPress={handleClick}
-        setHeader={setHeader}
-        header={header}
+          setHeading={setHeading}
+          header={heading}
         />
       </div>
     )
