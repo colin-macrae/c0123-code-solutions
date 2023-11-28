@@ -1,6 +1,6 @@
 import './App.css';
 
-export default function AppDrawer({ onPress, setHeading, header }) {
+export default function AppDrawer({ onPress, setHeading, header, menuItems, menuHeading }) {
   function handleClick() {
     console.log('modal clicked');
     onPress()
@@ -12,49 +12,28 @@ export default function AppDrawer({ onPress, setHeading, header }) {
       <div className='drawer' >
         <h1
           className='header'
-        >Choose a Sport</h1>
-        <button
-          onClick={() => {
-            handleClick()
-            setHeading('Road Cycling')
-          }
-            }
-          className='buttons'
-        >Road Cycling</button>
-        <button
-          onClick={() => {
-            handleClick()
-            setHeading('MTB')
-          }
-          }
-          className='buttons'
-        >MTB</button>
-        <button
-          onClick={() => {
-            handleClick()
-            setHeading('Cyclocross')
-          }
-          }
-          className='buttons'
-        >Cyclocross</button>
-        <button
-          onClick={() => {
-            handleClick()
-            setHeading('BMX')
-          }
-          }
-          className='buttons'
-        >BMX</button>
-        <button
-          onClick={() => {
-            handleClick()
-            setHeading('E-bikes')
-          }
-          }
-          className='buttons'
-        >E-bikes</button>
-
+        >{menuHeading}</h1>
+        {menuItems.map((item, index) => (
+            <MenuItemsList
+              key={index}
+              handleClick={handleClick}
+              setHeading={setHeading}
+              menuItem={item}
+            />
+        ))}
       </div>
     </>
+  )
+}
+
+export function MenuItemsList({menuItems, handleClick, setHeading, menuItem}) {
+  return(
+    <button
+      onClick={() => {
+        handleClick();
+        setHeading(menuItem);}}
+      className='buttons'>
+        {menuItem}
+    </button>
   )
 }

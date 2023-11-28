@@ -9,7 +9,8 @@ function App() {
   const [ hideDrawer, setHideDrawer ] = useState(true);
   const [ heading, setHeading ] = useState('Stuff for Cycling!')
 
-
+  const menuHeading = "Choose a Sport"
+  const menuItems = ['Road Cycling', 'MTB', 'Cyclocross', 'BMX', 'E-bikes']
 
   function handleClick() {
     setHideDrawer(!hideDrawer);
@@ -35,6 +36,8 @@ function App() {
         onPress={handleClick}
           setHeading={setHeading}
           header={heading}
+          menuItems={menuItems}
+          menuHeading={menuHeading}
         />
       </div>
     )
