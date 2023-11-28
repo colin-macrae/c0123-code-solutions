@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 function App() {
-  const [hideDrawer, setHideDrawer] = useState(true);
+  const [ hideDrawer, setHideDrawer ] = useState(true);
   const [ header, setHeader ] = useState('Stuff for Cycling!')
 
   function handleClick() {
@@ -28,9 +28,13 @@ function App() {
   } else {
     return (
       <div className='container'>
-        <a href='#' className='icon'>Open App Drawer</a>
+        <a href='#' className='icon'></a>
         <h1 className='page-title'>{header}</h1>
-        <AppDrawer onPress={handleClick} />
+        <AppDrawer
+        onPress={handleClick}
+        setHeader={setHeader}
+        header={header}
+        />
       </div>
     )
   }
